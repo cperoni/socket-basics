@@ -19,7 +19,7 @@ io.on('connection', function (socket) {
     socket.emit('message', {
         text: 'Welcome to the chat app'
     });
-})
+});
 http.listen(PORT, function () {
     console.log('server started');
 });

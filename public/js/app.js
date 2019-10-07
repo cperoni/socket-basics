@@ -19,4 +19,4 @@ $form.on('submit', function (event) {
         text: $message.val()
     });
     $message.val('');
-})
+});
