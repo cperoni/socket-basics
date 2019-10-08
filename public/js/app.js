@@ -1,5 +1,5 @@
 var socket = io();
-var nameParam = getQueryVariable('name');
+var nameParam = getQueryVariable('name') || 'anonymous';
 var roomParam = getQueryVariable('room');
 console.log(nameParam + ' whants to join ' + roomParam);
 
