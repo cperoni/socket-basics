@@ -4,20 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Socket.io Basics</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a136cd7049.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <a href="index.html">Change Settings</a>
-    <h1 class="room-title">
-        <!-- room name use JQuery -->
-    </h1>
-    <div class="messages">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 card">
+                <a href="index.html">Change Settings</a>
+                <h1 class="room-title">
+                    <!-- room name use JQuery -->
+                </h1>
+                <ul class="messages list-group">
 
+                </ul>
+                <form id="message-form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-comment"></i></span>
+                            <input type="text" name="message" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary btn-block" />
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-    <form id="message-form">
-        <input type="text" name="message" />
-        <input type="submit" />
-    </form>
     <script src="/js/jquery-3.4.1.min.js"></script>
     <!-- <script src="/js/Socket.io-2.3.0.js"></script> -->
     <script src="/socket.io/socket.io.js"></script>
