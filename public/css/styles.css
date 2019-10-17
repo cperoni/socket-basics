@@ -4,3 +4,11 @@
     display: flex;
     align-items: center;
 }
+
+h1 {
+margin: 24px 0;
+}
+
+.message p{
+margin: 6px 0;
+}
