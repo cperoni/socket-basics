@@ -35,11 +35,16 @@ $form.on('submit', function (event) {
 
     event.preventDefault();
     var $message = $form.find('input[name=message]');
-    socket.emit('message', {
-        name: nameParam,
-        room: roomParam,
-        text: $message.val()
-    });
+
+    if ($message.val().trim().length > 0) {
+
+        socket.emit('message', {
+            name: nameParam,
+            room: roomParam,
+            text: $message.val()
+        });
+    }
+
 
     $message.val('');
 });
